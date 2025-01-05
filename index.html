@@ -14,7 +14,11 @@
         window.document.addEventListener('DOMContentLoaded', function () {
             var audio = document.querySelector('audio');
             audio.volume = 0.7;
+            audio.duration = 1;
             audio.play();
+            if (audio.duration === 1) {
+                audio.loop = true;
+            }
         });
 
         function iniciarJogo() {
@@ -56,7 +60,8 @@
     <div class="container">
         <div class="row">
             <div class="col">
-                <div class="d-flex justify-content-center"><img src="imagens/game.png" alt=""></div>
+                <div class="d-flex justify-content-center"><img class="img-fluid" src="imagens/game.png" alt="Mneu" ></div>
+
             </div>
         </div>
 
