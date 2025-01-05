@@ -8,12 +8,19 @@
     <title>Mata Mosquito</title>
 
     <link rel="stylesheet" href="style.css">
+    <script>
+        window.document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.querySelector('audio');
+            audio.volume = 0.7;
+            audio.play();
+        });
+    </script>
     <script src="jogo.js"></script>
 
 </head>
 
 <body onresize="ajustaTamanhoPalco()">
-
+    <audio src="audio/acao.mp3"></audio>
     <div class="painel">
         <div class="vidas">
             <img id="v1" src="imagens/coracao_cheio.png" alt="">
@@ -30,7 +37,7 @@
 
     <script>
         if (performance.navigation.type === 1) {
-            window.location.href = 'Menu.html';
+            window.location.href = 'index.html';
         }
 
         document.getElementById('cronometro').innerHTML = tempo;
