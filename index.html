@@ -10,14 +10,6 @@
     <link rel="shortcut icon" href="imagens/mosca.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script>
-
-        window.document.addEventListener('DOMContentLoaded', function () {
-            var audio = document.querySelector('audio');
-            audio.volume = 0.7;
-            audio.duration = 1;
-            audio.play();
-        });
-
         function iniciarJogo() {
             var nivel = document.getElementById('nivel').value;
 
@@ -34,7 +26,8 @@
 
     </script>
 </head>
-<body>
+<body onload="document.querySelector('audio').play()">
+    <audio src="audio/menu.mp3"></audio>
     <!-- Modal de alerta -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
@@ -53,7 +46,6 @@
         </div>
     </div>
 
-    <audio src="audio/menu.mp3"></audio>
     <div class="container">
         <div class="row">
             <div class="col">
