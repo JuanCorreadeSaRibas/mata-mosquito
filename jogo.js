@@ -64,7 +64,7 @@ function posicaoRandomica() {
     // Criar o elemento html
 
     var mosquito = document.createElement('img')
-    mosquito.src = 'Imagens/mosca.png'
+    mosquito.src = 'imagens/mosca.png'
     mosquito.className = tamanhoAleatorio() + ' ' + ladoAleatorio()
     mosquito.style.left = posicaoX + 'px'
     mosquito.style.top = posicaoY + 'px'
