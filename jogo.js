@@ -78,11 +78,6 @@ function posicaoRandomica() {
     document.body.appendChild(mosquito)
 }
 
-function load(){
-    document.getElementById("preload-01").style.background = "url(http://domain.tld/image-01.png) no-repeat -9999px -9999px";
-		document.getElementById("preload-02").style.background = "url(http://domain.tld/image-02.png) no-repeat -9999px -9999px";
-		document.getElementById("preload-03").style.background = "url(http://domain.tld/image-03.png) no-repeat -9999px -9999px";
-}
 
 function tamanhoAleatorio() {
     var classe = Math.floor(Math.random() * 3)
