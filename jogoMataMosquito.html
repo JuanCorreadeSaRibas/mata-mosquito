@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="imagens/mosca.png" type="image/x-icon">
     <script>
         window.document.addEventListener('DOMContentLoaded', function () {
-            var audio = document.querySelector('audio');
+            var audio = document.getElementById('acao');
             audio.volume = 0.7;
             audio.loop = true;
             audio.play();
@@ -22,7 +22,8 @@
 </head>
 
 <body onresize="ajustaTamanhoPalco()">
-    <audio src="audios/acao.mp3"></audio>
+    <audio id="acao" src="audios/acao.mp3"></audio>
+    <audio id="somTapa" src="audios/tapa.mp3"></audio>
     <div class="painel">
         <div class="vidas">
             <img id="v1" src="imagens/coracao_cheio.png" alt="">
@@ -33,7 +34,6 @@
             <div class="temporizador">
                 Tempo restante:<span id="cronometro"></span>
             </div>
-            <audio id="somTapa" src="audios/tapa.mp3"></audio>
         </div>
     </div>
 
