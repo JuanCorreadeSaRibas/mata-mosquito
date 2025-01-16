@@ -28,14 +28,14 @@
                 </div>
             </div>
         </div>
-    </div>
-    
+</div>
     <div class="container">
-
         <div class="col">
-                <div class="d-flex justify-content-center"><img class="img-fluid" src="imagens/game.png" alt="Mneu" ></div>
+
+                <div class="d-flex justify-content-center">
+                    <img class="img-fluid" src="imagens/game.png" alt="Menu" >
+                </div>
                 
-            </div>
             
             <div class="row">
                 <div class="col d-flex justify-content-center">
@@ -54,15 +54,17 @@
             </div>
         </div>
 
-        <audio src="audios/menu.mp3" autoplay loop></audio>
+
     </div>
-    <script>
+    <script defer>
+    
+        let myModal = new bootstrap.Modal(document.getElementById('myModal'));
+
         function iniciarJogo() {
             var nivel = document.getElementById('nivel').value;
             
             if (nivel.trim() === "") {
                 // Exibe o modal
-                var myModal = new bootstrap.Modal(document.getElementById('myModal'));
                 myModal.show();
                 return false;
             }
@@ -70,6 +72,8 @@
             // Redireciona para o jogo
             window.location.href = "jogoMataMosquito.html?" + nivel;
         }
+
+
     </script>
 </body>
 </html>
